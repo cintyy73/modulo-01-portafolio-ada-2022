@@ -61,7 +61,7 @@
         <section id="language">
             <h3>Mis conocimientos</h3>
             <div class="text-section">
-                <p class="txt">
+                <p class="txt-projects">
                     Realicé un curso de Introducción a la programación en ADA, lo que me llevó a darme cuenta de lo
                     mucho
                     que me gustaba el mundo IT.
@@ -187,33 +187,29 @@
         <!-- END CONTACT SECTION -->
         <!-- FORM SECTION -->
         <section id="form">
-            <h3>Escribime</h3>
             <form action="">
-                <div class="form">
-                    <h5>Nombre*</h5>
-                    <input type="text" name="nombre" placeholder="Nombre" size="30">
-                </div>
-                <div class="form">
-                    <h5>Apellido*</h5>
-                    <input type="text" name="apellido" placeholder="Apellidos" size="30">
-                </div>
-                <div class="form">
-                    <h5>Teléfono</h5>
-                    <select type="tel" name="telefono" id="number">
-                        <option value="celular">Celular</option>
-                        <option value="linea">Línea </option>
-                        Celular <input type="" size="15" placeholder="Teléfono">
-                    </select>
-                </div>
-                <div class="form">
-                    <h5>E-mail*</h5>
-                    <input type="email" name="e-mail" placeholder="e-mail">
-                </div>
-                <div class="message">
-                    <h5>Deje aquí su mensaje</h5>
-                    <input type="text" size="300">
-                </div>
-                <button>Enviar</button>
+                <legend>Escribime</legend>
+                <label for="i-name">Nombre</label>
+                <input id="i-name" type="text" name="name" placeholder="Nombre"> 
+                <br>
+                <label for="i-surname">Apellido</label>
+                <input id="i-surname" type="text" name="surname" placeholder="Apellido"> 
+                <br>
+                <label for="phone">Teléfono</label>
+                <select name="metodos-pago" id="metodos-pago">
+                    <option value="mobil">Celular</option>
+                    <option value="line">Línea</option>
+                </select>
+                <input type="phone" name="phone" id="phone" placeholder="Teléfono">
+                <br>
+                <label for="i-emai">E-mail</label>
+                <input id="i-email" type="email" name="e-mail" placeholder="xxxxxxx@xxxxx.com">
+                <br>
+                <label for="message">Deje aquí su mensaje o comentarios</label>
+                <br>
+                <textarea name="message" id="message" cols="35" rows="8"></textarea>
+                <br> 
+                <input type="submit" value="Enviar">
             </form>
         </section>
         <!-- END FORM SECTION -->
