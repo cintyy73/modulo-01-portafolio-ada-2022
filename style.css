@@ -14,7 +14,12 @@ body {
   text-align: center;
 }
 
-/* HEADER */
+:root{
+  --colorClaro: rgb(249, 196, 204);
+  --colorOscuro: rgb(45, 19, 69);
+}
+
+/* -----HEADER------- */
 
 header {
   min-height: 100px;
@@ -45,9 +50,10 @@ nav ul li {
 nav ul li a {
   font-size: 15px;
   text-decoration: none;
-  color: lightpink;
+  color: var(--colorClaro);
 }
-
+/* *********MAIN***** */
+ 
 /* FIRST SECTION */
 
 section.first {
@@ -56,7 +62,7 @@ section.first {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(45, 19, 69);
+  background-color: var(--colorOscuro);
   gap: 10px;
 }
 
@@ -77,12 +83,12 @@ h1 {
 
 .profile-photo {
   height: 250px;
-  border: 4px double rgb(47, 200, 47);
+  border: 6px double rgb(47, 200, 47);
   margin-top: 10px;
 }
 
 .txt-title {
-  color: rgb(160, 98, 192);
+  color: var(--colorClaro);
   font-size: 25px;
   padding: 0 20px;
 }
@@ -96,7 +102,7 @@ h1 {
   width: 200px;
   height: 40px;
   background-color: lightblue;
-  color: blueviolet;
+  color: var(--colorOscuro);
   padding: 10px;
   margin-top: 20px;
   font-size: 20px;
@@ -158,7 +164,7 @@ div.language div div img {
   height: 100px;
   width: 100px;
   border-radius: 10px;
-  border: 5px solid lightpink;
+  border: 5px solid var(--colorClaro);
   margin: 30px;
 }
 
@@ -193,8 +199,8 @@ div.date {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px solid lightpink;
-  background-color: rgb(75, 43, 107);
+  border: 5px solid var(--colorClaro);
+  background-color: var(--colorOscuro);
 }
 
 div.txt-project {
@@ -202,7 +208,7 @@ div.txt-project {
   flex-direction: column;
   align-content: space-between;
   justify-content: center;
-  background-color: rgb(75, 43, 107);
+  background-color: var(--colorOscuro);
   padding: 20px;
 }
 
@@ -219,7 +225,7 @@ div.works {
 }
 
 div.works div.work a img {
-  border: 5px solid lightpink;
+  border: 5px solid var(--colorClaro);
   width: 140px;
   height: 180px;
   margin: 20px;
@@ -234,7 +240,7 @@ div.works div.work a img {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: pink;
+  background-color: var(--colorClaro);
   color: black;
 }
 
@@ -272,9 +278,16 @@ div.works div.work a img {
   align-items: center;
   padding: 20px;
 }
+
+input:focus{
+  outline: none;
+  border: 6px solid violet;
+}
+
 form legend{
   padding: 20px;
 }
+
 label, input, textarea{
 margin-bottom: 15px;}
 
@@ -284,13 +297,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(210, 132, 179);
+  background-color: var(--colorClaro);
   padding: 10px;
   color: black;
 }
 
 footer div nav ul li a {
-  color: white;
+  color:var(--colorOscuro);
 }
 
 footer div.cont-iconos {
@@ -315,12 +328,14 @@ footer div.iconos a:hover {
   height: 60px;
 }
 
-/* RESPONSIVE DESIGNE */
+/********** RESPONSIVE DESIGNE ***********/
 
-/*  MOBILE  */
+/*-------  MOBILE --------- */
 
 @media screen and (max-width: 460px) {
+
   /* HEADER */
+
   header {
     flex-direction: column;
   }
@@ -334,6 +349,7 @@ footer div.iconos a:hover {
   }
 
   /* FIRST SECTION */
+
   section.first .cont-photo img {
     height: 180px;
   }
@@ -351,6 +367,7 @@ footer div.iconos a:hover {
   }
 
   /* DATE */
+
   .date p,
   .txt {
     font-size: 10px;
@@ -358,23 +375,26 @@ footer div.iconos a:hover {
   }
 
   /* LANGUAGE SECTION */
+
   div.language div div img {
     height: 50px;
     width: 50px;
     border-radius: 5px;
-    border: 3px solid pink;
+    border: 3px solid var(--colorClaro);
     margin: 10px;
   }
 
   /* PROJECTS SECTION */
+
   div.works div.work a img {
-    border: 2px solid lightpink;
+    border: 2px solid var(--colorClaro);
     width: 100px;
     height: 150px;
     margin: 20px;
   }
 
   /* CONTACT SECTION*/
+
   #contact h3 {
     font-size: 20px;
     margin-top: 20px;
@@ -388,7 +408,9 @@ footer div.iconos a:hover {
 /* TABLET*/
 
 @media (min-width: 880px) {
-  /* HEADER */
+
+  /*--------- HEADER--------- */
+
   header {
     justify-content: space-between;
   }
@@ -453,19 +475,19 @@ footer div.iconos a:hover {
     height: 150px;
     width: 150px;
     border-radius: 8px;
-    border: 5px solid pink;
+    border: 5px solid var(--colorClaro);
     margin: 20px;
   }
 
   div.works div.work a img {
-    border: 5px solid lightpink;
+    border: 5px solid var(--colorClaro);
     width: 180px;
     height: 250px;
     margin: 20px;
   }
 }
 
-/* DESKTOP */
+/*--------- DESKTOP------------ */
 
 @media (min-width: 1440px) {
   /*  HEADER */
@@ -526,7 +548,7 @@ footer div.iconos a:hover {
     height: 150px;
     width: 150px;
     border-radius: 8px;
-    border: 5px solid pink;
+    border: 5px solid var(--colorClaro);
     margin: 20px;
   }
 
@@ -545,7 +567,7 @@ footer div.iconos a:hover {
   }
 
   div.works div.work a img {
-    border: 5px solid lightpink;
+    border: 5px solid var(--colorClaro);
     width: 250px;
     height: 350px;
     margin: 20px;
@@ -583,7 +605,6 @@ footer div.iconos a:hover {
   #form {
     font-size: 25px;
   }
-
 
   /* FOOTER */
 
