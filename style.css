@@ -10,14 +10,15 @@ body {
   display: flex;
   flex-direction: column;
   background-color: black;
-  color: aliceblue;
+  color: #f0f8ff;
   font-family: var(--fontFamily);
   text-align: center;
 }
 
 :root{
-  --colorClaro: rgb(249, 196, 204);
-  --colorOscuro: rgb(45, 19, 69);
+  --colorClaro: #f9c4cc;
+  --colorOscuro: #2d1345;
+  --fonts-body: #f0f8ff;
   --fontFamily: monospace;
   --sectionHeigth: 100vh;
 }
