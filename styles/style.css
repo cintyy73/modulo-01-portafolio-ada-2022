@@ -174,7 +174,7 @@ div.language div img {
 
 /* DATE */
 
-div.date {
+.date {
   min-height: var(--sectionHeigth);
   display: flex;
   justify-content: center;
