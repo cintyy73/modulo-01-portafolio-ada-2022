@@ -20,7 +20,7 @@ dejarme un `mensaje`, apreciar mis `conocimientos` y mis `proyectos` realizados 
 
 ---
 
-- Este proyecto fue diseñado con `responsive design` `MOVIL-FIRST`
+- Este proyecto fue diseñado con `responsive design` `MOBILE-FIRST`
 - A continuación se detallan sus diferentes puntos de quiebre:  
 ##### _DESKTOP_
    (min-width: 1440px)  

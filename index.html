@@ -80,11 +80,11 @@
     <!-- MAIN -->
     <main>
         <!--FIRST SECTION -->
-        <section class="first">
+        <section class="first" tabindex="1">
             <div class="cont-photo">
                 <img src="./assets/imagenes/cintia.jpg" alt="Profile photo" class="profile-photo">
             </div>
-            <div class="cont-description">
+            <div class="cont-description" >
                 <span class="txt-title">¡Hola! soy</span>
                 <h1>
                     Cintia Páez
@@ -95,14 +95,14 @@
                     Amo el camping, la pesca y el aire libre en familia.
                 </h4>
                 <div class="button-projects">
-                    <a href="#projects">Lo que hago</a>
+                    <a aria-label="haz click para ir a la sección mis conocimientos" href="#projects">Lo que hago</a>
                 </div>
             </div>
         </section>
         <!-- END FIRST SECTION -->
 
         <!-- LANGUAGE SECTION -->
-        <section id="language">
+        <section id="language" tabindex="2">
             <h3>Mis conocimientos</h3>
             <div class="text-section">
                 <p class="txt-projects">
@@ -137,17 +137,20 @@
         <!-- END LANGUAGE SECTION -->
 
         <!-- DATE-->
-        <div class="date">
-            <p>
-                Pobre del que tiene miedo de correr riesgos, <br> porque ese quizá <br> no se decepcione nunca, <br> ni
-                tenga
-                ilusiones, <br> ni sufra... <br> como los que persiguen un sueño..
-            </p>
-        </div>
+        <section class="date-" tabindex="3">
+            <div class="date">
+                <img src="./assets/imagenes/atardecer.jpg" alt="imagen de atardecer en corrientes de fondo">
+                <p>
+                    Pobre del que tiene miedo de correr riesgos, <br> porque ese quizá <br> no se decepcione nunca, <br> ni
+                    tenga
+                    ilusiones, <br> ni sufra... <br> como los que persiguen un sueño..
+                </p>
+            </div>
+        </section>
         <!-- END DATE -->
 
         <!--PROJECTS SECTION -->
-        <section id="projects">
+        <section id="projects" tabindex="4">
             <div class="txt-project">
                 <h3>Mis proyectos</h3>
                 <p class="txt">
@@ -160,7 +163,7 @@
             </div>
             <div class="works">
                 <div class="work portfolio">
-                    <a href="">
+                    <a href="https://cintyy73.github.io/modulo-01-portafolio-ada-2022/">
                         <img src="./assets/portada-proyectos/portfolio-pro.png"
                             alt="Portada del proyecto -Mi portafolio-">
                     </a>
@@ -204,40 +207,40 @@
         <!-- END PROJECTS SECTIO -->
 
         <!-- CONTACT SECTION  -->
-        <section id="contact">
+        <section id="contact" tabindex="5">
             <h3>Contactame</h3>
             <div class="icono facebook">
                 <a href="https://www.facebook.com/" target="blank">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
-                        alt="enlace al pefil de facebook">
-                    <span class="texto">Cintia Páez</span>
+                        alt="icono de facebook" >
+                    <span aria-label="haz click para ir al perfil de cintia páez" class="texto">Cintia Páez</span>
                 </a>
             </div>
             <div class="icono linkedin">
                 <a href="https://www.linkedin.com/" target="blank">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain-wordmark.svg"
-                        alt="icono linkedin">
-                    <span class="texto">CintiaAngeles</span>
+                        alt="icono de linkedin" >
+                    <span aria-label="haz click para ir al perfil de cintia páez" class="texto">CintiaAngeles</span>
                 </a>
             </div>
             <div class="icono gmail">
                 <a href="https://mail.google.com/" target="blank">
-                    <img src="./assets/imagenes/gmail-logo.png " alt="icono g-mai">
-                    <span class="texto">cintia.angeles40@gmail.com</span>
+                    <img src="./assets/imagenes/gmail-logo.png " alt="icono de g-mail" >
+                    <span aria-label="haz click para ir al perfil de cintia páez" class="texto">cintia.angeles40@gmail.com</span>
                 </a>
             </div>
             <div class="icono github">
                 <a href="https://github.com/" target="blank">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                        alt="icono git-hub">
-                    <span class="texto">cintia-angeles40</span>
+                        alt="icono de git-hub" >
+                    <span aria-label="haz click para ir al perfil de cintia páez" class="texto">cintia-angeles40</span>
                 </a>
             </div>
         </section>
         <!-- END CONTACT SECTION -->
 
         <!-- FORM SECTION -->
-        <section id="form">
+        <section id="form" tabindex="6">
             <form action="">
                 <legend>Escribime</legend>
                 <label for="name">Nombre</label>
@@ -282,25 +285,25 @@
         <div class="cont-iconos">
             <div class="iconos">
                 <a href="https://mail.google.com/" target="blank">
-                    <img src="./assets/imagenes/gmail-logo.png" alt="icono g-mail">
+                    <img src="./assets/imagenes/gmail-logo.png" alt="icono de g-mail" aria-label="haz click para redactar un mensage en g-mail">
                 </a>
             </div>
             <div class="iconos">
                 <a href="https://www.facebook.com/" target="blank">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
-                        alt="icono facebook">
+                        alt="icono de facebook" aria-label="haz click para ir al perfil de cintia páez en facebook">
                 </a>
             </div>
             <div class="iconos">
                 <a href="https://www.linkedin.com/" target="blank">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain-wordmark.svg"
-                        alt="icono linkedin">
+                        alt="icono de linkedin" aria-label="haz click para ir al perfil de cintia páez en linkedin">
                 </a>
             </div>
             <div class="iconos">
                 <a href="https://github.com/" target="blank">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                        alt="icono git-hub">
+                        alt="icono de git-hub" aria-label="haz click para ir al perfil de cintia páez en github">
                 </a>
             </div>
         </div>
