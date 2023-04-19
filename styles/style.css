@@ -86,6 +86,7 @@ h1 {
 }
 
 .profile-photo {
+  width:  350px;
   height: 250px;
   border: 6px double #2fc82f;
   margin-top: 10px;
@@ -201,7 +202,6 @@ div.date img{
 div.date p {
   position: absolute;
   padding: 20px;
-  margin-bottom: 250px;
   bottom:40px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
